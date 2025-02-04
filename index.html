@@ -3,53 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Data Collection & Dashboard</title>
+    <title>Gut2Work Tracker</title>
     <style>
         body {
-            font-family: 'Georgia', serif; /* Classic serif font */
+            font-family: 'Georgia', serif;
             text-align: center;
             margin: 50px;
             background-color: #0078D7; /* Light blue background */
-            color: white; /* Makes the text white */
-}
-        .container {
-            max-width: 500px;
-            margin: auto;
+            color: white;
         }
-        h1  {
-            color: white; /* Makes the title text white */
-            font-family: 'Georgia', serif; /* Ensures the serif font */
-}
 
         .button {
-            display: block;
-            width: 100%;
-            padding: 15px;
-            margin: 10px 0;
+            display: inline-block;
+            background-color: white;
+            color: #0078D7;
+            padding: 15px 30px;
+            margin: 10px;
+            border-radius: 10px;
             text-decoration: none;
-            color: white;
-            font-size: 18px;
-            border-radius: 5px;
-            text-align: center;
+            font-weight: bold;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
         }
-        .form-btn {
-            background-color: #007BFF;
+
+        .button:hover {
+            background-color: #f0f0f0;
         }
-        .dashboard-btn {
-            background-color: #28A745;
+
+        .logo {
+            margin-bottom: 20px;
+            max-width: 150px; /* Adjust logo size */
+            height: auto;
         }
     </style>
 </head>
 <body>
+    <h1>Welcome to the Gut2Work</h1>
+    <img src="gut2worklogo.png" alt="Gut Health Tracker Logo" class="logo">
 
-    <div class="container">
-        <h1>Welcome to Gut2Work</h1>
-        <img src="gut2worklogo.png" alt="Gut Health Visualization" style="width: 200px; height: auto; margin: 20px;">
-        <p>Please select an option:</p>
-        
-        <a href="https://form.jotform.com/250264275389060" class="button form-btn" target="_blank">📋 Fill the Form</a>
-        <a href="https://lookerstudio.google.com/reporting/aba0225a-834b-470e-8a72-89e3a2cf65c5/page/S6iiE" class="button dashboard-btn" target="_blank">📊 View Dashboard</a>
-    </div>
-
+    <p>Select an option below:</p>
+    <a href="form.html" class="button">📋 Open Form</a>
+    <a href="dashboard.html" class="button">📊 Open Dashboard</a>
 </body>
 </html>
